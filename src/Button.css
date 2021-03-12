@@ -16,11 +16,11 @@ html {
   float: right;
   margin: 5vh 5vw 0 0;
   height: 80vh;
-  width: 235px;
+  /* width: 235px; */
   background-color: whitesmoke;
   border-radius: 25px;
   opacity: 0.9;
-  overflow: scroll;
+  overflow: auto;
 }
 section {
   display: flex;
@@ -64,12 +64,11 @@ section input {
   background-color: darkslategray;
   box-shadow: 0 10px 17px -4px black;
   margin: 0 10px;
+
 }
 .button:hover {
-  background-color: #ffffff;
   text-decoration: none;
-  /* color: WHITESMOKE; */
-  color: darkslategrey;
+  cursor: pointer;
   text-decoration: underline;
 }
 @media all and (max-width: 650px) {
@@ -84,6 +83,13 @@ section input {
     margin-left: 20px;
   }
 }
+.slidecontainer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 100%;
+}
 
 .footer {
   position: fixed;
@@ -92,3 +98,4 @@ section input {
   width: 100vw;
   height: 50px;
 }
+
