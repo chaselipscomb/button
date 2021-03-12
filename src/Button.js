@@ -51,7 +51,8 @@ const Button = () => {
             setButtonStyles({ boxShadow: '0 10px 17px -4px black' })
         }
     }, [buttonShadow]);
-
+    
+  
 
     const handleChange = (e) => {
         setButtonType(e.target.value);
@@ -112,7 +113,7 @@ const Button = () => {
                 <section>
                     <p className='sectionHeader'>Button Sizing</p>
                     <div class="slidecontainer">
-                    <span>Width:</span> <input type="range" min="110" max="220" value={buttonWidth} class="slider" id="width" onChange={(e)=> setButtonWidth(e.target.value) }/>
+                    <span>Width:</span> <input type="range" min="125" max="220" value={buttonWidth} class="slider" id="width" onChange={(e)=> setButtonWidth(e.target.value) }/>
                     <span>Height:</span> <input type="range" min="50" max="100" value={buttonHeight} class="slider" id="height" onChange={(e)=> setButtonHeight(e.target.value) }/>
                     </div>
                 </section>
